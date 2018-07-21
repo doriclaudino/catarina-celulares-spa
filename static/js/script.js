@@ -8,6 +8,13 @@ $(function() {
     } else {
       $navmenu.removeClass("is-scrolling");
     }
+
+    //show brand name
+    if ($(window).scrollTop() > 120) {
+      $("#nav_brand_name").show();
+    } else {
+      $("#nav_brand_name").hide();
+    }
   }
   menuscroll();
   $(window).on("scroll", function() {
