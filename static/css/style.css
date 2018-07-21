@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+#nav_brand_name {
+  font-family: Amatic SC;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   position: relative;
@@ -197,6 +204,10 @@ p.lead {
     height: 1px;
     position: absolute;
   }
+
+  #nav_brand_name {
+    font-size: 2.3vw;
+  }
 }
 
 @media (max-width: 991px) {
@@ -205,6 +216,9 @@ p.lead {
   }
   .navbar-nav .nav-item {
     text-align: center;
+  }
+  #nav_brand_name {
+    font-size: 7vw;
   }
 }
 
@@ -381,6 +395,18 @@ header {
 @media (min-width: 992px) {
   .perspective-phone {
     margin-top: -150px;
+  }
+}
+
+@media (min-width: 1023px) {
+  #nav_brand_name {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 2559px) {
+  #nav_brand_name {
+    font-size: 1vw;
   }
 }
 
