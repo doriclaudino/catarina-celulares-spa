@@ -68,6 +68,21 @@
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
 
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="1579865982135889" theme_color="#fa0076" logged_in_greeting="Oi! Sou a Catarina, como posso te ajudar?"
+        logged_out_greeting="Oi! Sou a Catarina, como posso te ajudar?">
+    </div>
+
     <!-- Nav Menu -->
     <div class="nav-menu fixed-top  change-on-scrolling ">
         <div class="container">
